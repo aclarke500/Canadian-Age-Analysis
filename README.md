@@ -1,6 +1,6 @@
 # Canadian-Age-Analysis
 <h1>Purpose:</h1>
-<p>Harvest, foromat, and create a regression line for age brackets in Canada</p>
+<p>Harvest, format, and create a regression line for age brackets in Canada</p>
 <h2>Usage: bash run.sh</h2>
 <h1>Methods:</h1>
 <p>Runs a script to read the csv file with the information about Canadian age demographics.</p>
