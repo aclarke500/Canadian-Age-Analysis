@@ -17,10 +17,12 @@ y=pd.DataFrame.from_dict(ydic)
 # set up domain and range for display
 X_seq = np.linspace(X.min(),X.max(),300).reshape(-1,1)
 
+# perform regression of degree 9
 degree=9
 polyreg=make_pipeline(PolynomialFeatures(degree),LinearRegression())
 polyreg.fit(X,y)
 
+# display and make data look pretty
 plt.figure()
 plt.scatter(X,y, color='red')
 plt.plot(X_seq,polyreg.predict(X_seq),color="purple")
